@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,signOut} from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDd0ytX8-Czq96gpkcEcyJR-iOwEKeRYs0",
+  apiKey: env.process.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
   projectId: process.env.REACT_APP_PROJECT_ID,
   storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
